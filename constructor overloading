@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructoroverloadingcsharp
+{
+    class Program
+    {
+        public
+            Program()
+        {
+            Console.WriteLine("this is a constructor");
+        }
+        Program(int a,int b)
+        {
+            Console.WriteLine("this is second constructor {0}", (a+b));
+        }
+        Program(int a,int b,int c)
+        {
+            Console.WriteLine("this is constructor overloading {0}",(a+b+c));
+        }
+        static void Main(string[] args)
+        {
+            Program one = new Program(); // constructor overloading
+            Program two = new Program(22,44); //constructor overloading
+            Program three = new Program(22,22,33); // constructor over loading
+            Console.ReadLine();
+        }
+    }
+}
