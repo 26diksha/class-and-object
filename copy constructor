@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructorcsharp
+{
+    class Program
+    {
+        Program()
+        {
+            Console.WriteLine("diksha kulshrestha");//its a constructor.
+        }
+        static void Main(string[] args)
+        {
+            Program dik = new Program();
+            Console.ReadLine();
+        }
+    }
+}
